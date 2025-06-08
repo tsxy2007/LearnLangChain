@@ -43,7 +43,7 @@ print(f"Connecting to Redis at : {REDIS_URL}")
 from langchain_redis import RedisChatMessageHistory
 
 redis_history = RedisChatMessageHistory(
-                session_id="test",
+                session_id="my-redis",
                 redis_url="redis://localhost:6379",
                 ttl=3600  # Expire chat history after 1 hour
             )
